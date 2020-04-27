@@ -1,0 +1,24 @@
+.ui.menu .item>img:not(.ui) {
+    margin:0px 0.5em;
+}
+.ui.navbar .item{
+    color:white
+}
+.navbar{
+    background-image: linear-gradient(
+        135deg,
+        rgb(24,42,115) 0%,
+        rgb(33,138,174) 69%,
+        rgb(32,167,172) 89%
+    ) !important;
+    border-radius: inherit;
+}
+.ui.button {
+    background-color: transparent;
+    color:white;
+    border:1px solid white;
+}
+.ui.menu .active.item{
+    background-color: #21BA45;
+    color:white
+}

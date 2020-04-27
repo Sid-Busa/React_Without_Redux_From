@@ -1,0 +1,6 @@
+.setting-nav{
+    background-color: white !important;
+}
+.setting-nav .active.item{
+    color:black !important;
+}
