@@ -16,7 +16,7 @@ const initialState =[
         },
         {
             id:'b',
-            name:'Heta',
+            name:'sid',
             photoURL:'/assets/Dave.jpg'
         }]
     },
@@ -37,7 +37,7 @@ const initialState =[
         },
         {
             id:'b',
-            name:'Heta',
+            name:'chrissy',
             photoURL:'/assets/Dave2.jpg'
         }]
     }
