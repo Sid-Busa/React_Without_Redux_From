@@ -5,8 +5,8 @@ const EventDetailedSidebar = ({event}) => {
     const isHost = false
     return (
         <Fragment>
-            <Segment color='teal' inverted style={{border:'none',textAlign:'center'}} secondary >
-                {/* {event.attendees && event.attendees.length} {event.attendees.length===1 ? 'Person' : 'People' }  */}
+            <Segment color='teal' inverted style={{border:'none',textAlign:'center'}} secondary > 
+                 {/* {event.attendees ? event.attendees.length : 'going on' } {event.attendees.length===1 ? 'Person' : 'People' } */}
             </Segment>
             
             <Segment>

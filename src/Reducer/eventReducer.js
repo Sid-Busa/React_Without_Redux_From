@@ -9,6 +9,10 @@ const initialState =[
     venue:"Tower London, ST Kathrine",
     hostby:'sid',
     hostPhotoURL : '/assets/Dave.jpg',
+    venueLatLng : {
+        lat : 51.5118074,
+        lng : -0.12300089999996544 
+    },
     attendees : [{
             id:'a',
             name:'Bob',
@@ -30,6 +34,10 @@ const initialState =[
     venue:"Tower London, ST Kathrine",
     hostby:'sid',
     hostPhotoURL : '/assets/Dave2.jpg',
+    venueLatLng : {
+        lat : 40.7484405,
+        lng : -73.98566440000002 
+    },
     attendees : [{
         id:'a',
         name:'Bob',

@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import EventList from '../EventList/EventList';
 import { Grid } from 'semantic-ui-react';
 import { createEvent,updateEvent,deleteEvent} from '../../Actions/eventAction';
+import EventActivity from '../EventActivity/EventActivity';
 
 class EventDashboard extends Component {
      
@@ -19,7 +20,7 @@ class EventDashboard extends Component {
                        <EventList  events={events}  deleteEvent={this.handleDeleteForm} />
                     </Grid.Column>
                     <Grid.Column  mobile={16} tablet={6} computer={6}>
-                        <h2>Activities</h2>
+                        <EventActivity />
                     </Grid.Column> 
                 </Grid>
             </div>

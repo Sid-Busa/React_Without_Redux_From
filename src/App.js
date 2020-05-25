@@ -9,22 +9,27 @@ import UserDetailedPage from './components/UserDetailed/UserDetailedPage';
 import SettingDashboard from './components/Setting/SettingDashboard';
 import EventForm from './components/EventForm/EventForm';
 import TestForRedux from './components/TestForRedux/TestForRedux';
+import Video from './components/video/Video';
+import ModelManager from './components/models/ModelManager';
 import { Container } from 'semantic-ui-react';
 import {path} from './constants/Path';
+
 import './App.css';
+
 
 
 const App = (props) => {
   return (
     <Fragment>
+      <ModelManager /> 
       <Route exact path={path.home} component={Home} />
       <Route path='/(.+)' 
              render= {() => (
-              <Fragment>
+              <Fragment> 
               <Navbar />
               <Container className="main">
                 <Switch key={props.location.key}>
-                  <Route path={path.home} exact component={Home} />
+                  {/* <Route path={path.home} exact component={Home} /> */}
                   <Route path={path.eventDashboard} exact component={EventDashboard} />
                   <Route path={path.eventDetailedPage} component={EventDetailedPage} />
                   <Route path={path.peopleDashboard} component={PeopleDashboard} />
@@ -32,6 +37,7 @@ const App = (props) => {
                   <Route path={path.settingDashboard} component={SettingDashboard} />
                   <Route path={['/createEvent','/manage/:id']} component={EventForm} />
                   <Route path={path.testForRedux} component={TestForRedux} />
+                  <Route path={path.video} component={Video} />
                 </Switch>
               </Container>
             </Fragment>
